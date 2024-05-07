@@ -3,9 +3,16 @@
 ## 6.1.1
 
 ```shell
-vcpkg install ffmpeg[core,swscale,swresample,avformat,avfilter,avdevice,avcodec,gpl,vpx,x264,x265]:x64-windows
-vcpkg install ffmpeg[core,swscale,swresample,avformat,avfilter,avdevice,avcodec,gpl,vpx,x264,x265]:x86-windows
+MSYS2-CLANG64 
 
-vcpkg install ffmpeg[core,swscale,swresample,avformat,avfilter,avdevice,avcodec,gpl,vpx,x264,x265]:x64-windows-static
-vcpkg install ffmpeg[core,swscale,swresample,avformat,avfilter,avdevice,avcodec,gpl,vpx,x264,x265]:x86-windows-static
+./vcpkg.exe install ffmpeg[avcodec,avdevice,avfilter,avformat,core,swresample,swscale,gpl,vpx,x264,x265,webp]:x64-windows-static
+./vcpkg.exe install ffmpeg[avcodec,avdevice,avfilter,avformat,core,swresample,swscale,gpl,vpx,x264,x265,webp]:x86-windows-static
+
+-- Building Options: --toolchain=msvc --enable-pic --disable-doc --enable-debug --enable-runtime-cpudetect --disable-autodetect --pkg-config=C:/vcpkg/installed/x64-windows/tools/pkgconf/pkgconf.exe --target-os=win32 --enable-w32threads --enable-d3d11va --enable-dxva2 --enable-mediafoundation --disable-inline-asm --cc=cl.exe --cxx=cl.exe --windres=rc.exe --ld=link.exe --ar='ar-lib lib.exe' --ranlib=: --enable-gpl --disable-ffmpeg --disable-ffplay --disable-ffprobe --enable-avcodec --enable-avdevice --enable-avformat --enable-avfilter --disable-postproc --enable-swresample --enable-swscale --disable-alsa --disable-amf --disable-libaom --disable-libass --disable-avisynth --disable-bzlib --disable-libdav1d --disable-libfdk-aac --disable-libfontconfig --disable-libfreetype --disable-libfribidi --disable-iconv --disable-libilbc --disable-lzma --disable-libmp3lame --disable-libmodplug --disable-cuda --disable-nvenc --disable-nvdec  --disable-cuvid --disable-ffnvcodec --disable-opencl --disable-opengl --disable-libopenh264 --disable-libopenjpeg --disable-libopenmpt --disable-openssl --enable-schannel --disable-libopus --disable-sdl2 --disable-libsnappy --disable-libsoxr --disable-libspeex --disable-libssh --disable-libtensorflow --disable-libtesseract --disable-libtheora --disable-libvorbis --enable-libvpx --enable-libwebp --enable-libx264 --enable-libx265 --disable-libxml2 --disable-zlib --disable-libsrt --disable-libmfx --enable-cross-compile --extra-cflags=-DHAVE_UNISTD_H=0 --pkg-config-flags=--static
+
+./vcpkg.exe install ffmpeg[avcodec,avdevice,avfilter,avformat,core,swresample,swscale,gpl,vpx,x264,x265,webp]:x64-windows
+./vcpkg.exe install ffmpeg[avcodec,avdevice,avfilter,avformat,core,swresample,swscale,gpl,vpx,x264,x265,webp]:x86-windows
+
+-- Building Options: --toolchain=msvc --enable-pic --disable-doc --enable-debug --enable-runtime-cpudetect --disable-autodetect --pkg-config=C:/vcpkg/installed/x64-windows/tools/pkgconf/pkgconf.exe --target-os=win32 --enable-w32threads --enable-d3d11va --enable-dxva2 --enable-mediafoundation --disable-inline-asm --cc=cl.exe --cxx=cl.exe --windres=rc.exe --ld=link.exe --ar='ar-lib lib.exe' --ranlib=: --enable-gpl --disable-ffmpeg --disable-ffplay --disable-ffprobe --enable-avcodec --enable-avdevice --enable-avformat --enable-avfilter --disable-postproc --enable-swresample --enable-swscale --disable-alsa --disable-amf --disable-libaom --disable-libass --disable-avisynth --disable-bzlib --disable-libdav1d --disable-libfdk-aac --disable-libfontconfig --disable-libfreetype --disable-libfribidi --disable-iconv --disable-libilbc --disable-lzma --disable-libmp3lame --disable-libmodplug --disable-cuda --disable-nvenc --disable-nvdec  --disable-cuvid --disable-ffnvcodec --disable-opencl --disable-opengl --disable-libopenh264 --disable-libopenjpeg --disable-libopenmpt --disable-openssl --enable-schannel --disable-libopus --disable-sdl2 --disable-libsnappy --disable-libsoxr --disable-libspeex --disable-libssh --disable-libtensorflow --disable-libtesseract --disable-libtheora --disable-libvorbis --enable-libvpx --enable-libwebp --enable-libx264 --enable-libx265 --disable-libxml2 --disable-zlib --disable-libsrt --disable-libmfx --enable-cross-compile --disable-static --enable-shared --extra-cflags=-DHAVE_UNISTD_H=0
+
 ```
